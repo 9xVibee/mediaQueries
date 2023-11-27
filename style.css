@@ -7,11 +7,13 @@
 main {
   height: 100vh;
   width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .white-portion {
   width: 100%;
-  height: 20%;
+  height: 200px;
   background-color: white;
 }
 
@@ -76,6 +78,10 @@ main {
 }
 
 @media screen and (max-width:863px) {
+  * {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
   .container {
     flex-direction: column;
   }
@@ -94,6 +100,7 @@ main {
   }
 
   .yellow-portion {
-    width: 200%;
+    width: 100%;
+    height: 100%;
   }
 }
